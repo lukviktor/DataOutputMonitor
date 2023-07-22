@@ -2,8 +2,9 @@ package com.abboott;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(new ParseDocument().downloadContentDocument());
-        ElementsAndAttributes attributes = new ElementsAndAttributes();
-        //System.out.println(attributes.gettingHyperlinksOnPage());
+        ParseDocument pd = new ParseDocument();
+        System.out.println(pd.downloadContentDocument());
+ElementsAndAttributes ea = new ElementsAndAttributes();
+        System.out.println(ea.gettingHyperlinksOnPage());
     }
 }
