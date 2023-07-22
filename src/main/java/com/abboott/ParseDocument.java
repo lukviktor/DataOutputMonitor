@@ -8,11 +8,11 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 public class ParseDocument {
-    public Document downloadContentDocument(String urlDoc) {
+    protected Document downloadContentDocument() {
 
         Document document = null;
         try {
-            document = Jsoup.connect(urlDoc).get();
+            document = Jsoup.connect(DataContent.URLS).get();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -20,7 +20,7 @@ public class ParseDocument {
 
     }
 
-    public Document downloadContentFileHTMLDocument(String pathToFile) {
+    protected Document downloadContentFileHTMLDocument(String pathToFile) {
         var htmlFile = new File(pathToFile);
         Document document = null;
         try {
