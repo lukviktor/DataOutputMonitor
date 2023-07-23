@@ -24,10 +24,10 @@ public class GetDataFromWebsite {
 
     // Выполнение поиска нужного элемента
     public String searchElement() {
-        GetDataFromWebsite getDataSite = new GetDataFromWebsite();
+        //GetDataFromWebsite getDataSite = new GetDataFromWebsite();
 
         // Выполнение поиска нужных элементов
-        Elements elements = getDataSite.parseDataFromSite().select(DataProgram.CSS_SELECTOR);
+        Elements elements = new GetDataFromWebsite().parseDataFromSite().select(DataProgram.CSS_SELECTOR);
 
         // Перебор найденных элементов и извлечение данных
         return elements.stream().map(element -> element.text() + "\n")

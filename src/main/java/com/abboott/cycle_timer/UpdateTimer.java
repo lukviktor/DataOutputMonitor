@@ -19,7 +19,7 @@ public class UpdateTimer {
         };
 
         // Запускаем таймер
-        timer.schedule(task, 0, 6000);
+        timer.schedule(task, 0, 60000);
     }
 
     // Для остановки таймера
