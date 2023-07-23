@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 /**
  * Получение данных с вебсайта
  */
-class GetDataFromWebsite {
+public class GetDataFromWebsite {
 
     // Подключение к URL и получение HTML-страницы
     public Document parseDataFromSite() {
