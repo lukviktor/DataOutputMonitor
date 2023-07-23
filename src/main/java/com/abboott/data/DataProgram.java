@@ -7,4 +7,5 @@ public class DataProgram {
     public static final String[] COLUMN_NAMES_WINDOWS = {"First Name", "Last Name", "Age"};
     public static final String BUTTON_EXIT = "EXIT";
     public static final String FRAME_TABLE = "Visual Task";
+    public static final String PATH_TO_FILE_EXEL = "src/main/resources/getText.xlsx";
 }
